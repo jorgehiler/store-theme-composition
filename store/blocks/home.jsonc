@@ -8,7 +8,9 @@
   "composition-component": {
     "props": {
       "title": "Ejemplo de composición"
-    }
+    },
+    "blocks": ["solid-border", "dotted-border"],
+    "children": ["list-context.product-list#composition", "image-new#dummy"]
   },
 
   "rich-text#title": { 
@@ -21,10 +23,16 @@
   },
 
   "solid-border": {
+    "props": {
+      "color": "blue"
+    },
     "children": ["rich-text#title"]
   },
 
   "dotted-border": {
+    "props": {
+      "color": "green"
+    },
     "children": ["rich-text#title"]
   },
 
