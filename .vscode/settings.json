@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": {
+        
+    },
+    "workbench.colorCustomizations": {
+      "statusBar.background": "#56B32F",
+      "statusBar.debuggingBackground": "#56B32F",
+      "statusBar.noFolderBackground": "#56B32F",
+      "statussBar.prominentBackground": "#56B32F"
+    }
+}

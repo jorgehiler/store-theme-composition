@@ -1,0 +1,43 @@
+{
+    "list-context.product-list#composition": {
+        "blocks": ["product-summary.shelf"],
+        "children": ["slider-layout#not-found__top-sales"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "maxItems": 10,
+          "productOrigin":true
+        }
+      },
+    
+      "slider-layout#not-found__top-sales": {
+        "title": "not-found-top-más-vendidos-slider",
+        "props": {
+          "blockClass": "ofertar-de-la-semana", 
+          "itemsPerPage": {
+            "phone": 1,
+            "tablet": 3,
+            "desktop": 5
+          },
+          "showNavigationArrows": "always",
+          "showPaginationDots": "desktopOnly",
+          "centerMode": {
+            "phone": "to-the-left",
+            "desktop": "disabled"
+          },
+          "autoplay": {
+            "timeout": 40000,
+            "stopOnHover": true
+          },
+          "infinite": true
+        }
+      },
+    
+      "product-summary.shelf": {
+        "children": [
+          "product-summary-image",
+          "product-summary-name",
+          "product-summary-brand",
+          "product-summary-price"
+        ]
+      }
+}

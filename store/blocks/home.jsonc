@@ -1,0 +1,38 @@
+{
+  "store.home": { 
+    "blocks": [
+      "composition-component"
+    ]
+  },
+
+  "composition-component": {
+    "props": {
+      "title": "Ejemplo de composición"
+    }
+  },
+
+  "rich-text#title": { 
+    "props": { 
+      "text": "## Sección de productos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  "solid-border": {
+    "children": ["rich-text#title"]
+  },
+
+  "dotted-border": {
+    "children": ["rich-text#title"]
+  },
+
+
+  "image-new#dummy": {
+    "props": {
+      "src": "https://vtexhelp.vtexassets.com/_v/public/assets/v1/published/vtexhelp.help-io@2.7.0/public/logo.png"
+    }
+  }
+
+}
