@@ -7,7 +7,8 @@
 
   "composition-component": {
     "props": {
-      "title": "Ejemplo de composición"
+      "title": "Ejemplo de composición",
+      "Bottom": "image-new#dummy"
     },
     "blocks": ["solid-border", "dotted-border"],
     "children": ["list-context.product-list#composition", "image-new#dummy"]
