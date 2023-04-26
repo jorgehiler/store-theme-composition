@@ -1,13 +1,25 @@
 {
   "store.home": { 
     "blocks": [
-      "composition-component"
+      // "composition-component"
+      "custom-block#example"
     ]
   },
 
   "composition-component": {
     "props": {
-      "title": "Ejemplo de composición"
+      "title": "Ejemplo de composición",
+      "Bottom": "list-context.product-list#composition"
+    }, 
+    "children": ["image-new#dummy", "rich-text#title"],
+    "blocks": ["dotted-border", "solid-border"]
+  },
+
+  "custom-block#example": {
+    "children": ["rich-text#subtitle"],
+    "props": {
+      "title": "Sección personalizada",
+      "LogoBrand": "image-new#dummy"
     }
   },
 
@@ -20,8 +32,18 @@
     }
   },
 
+  "rich-text#subtitle": { 
+    "props": { 
+      "text": "Subtitutlo"
+    }
+  },
+
+
   "solid-border": {
-    "children": ["rich-text#title"]
+    "children": ["rich-text#title"],
+    "props": {
+      "color": "blue"
+    }
   },
 
   "dotted-border": {
