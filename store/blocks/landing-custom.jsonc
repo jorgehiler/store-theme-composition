@@ -1,0 +1,7 @@
+{
+  "store.custom.lading-custom": {
+    "blocks": [
+        "custom-block#example"
+      ]
+  }
+}

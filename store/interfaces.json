@@ -1,0 +1,9 @@
+{
+  "store.custom.lading-custom": {
+    "around": ["wrapper-context-info"]
+  },
+
+  "store.home.expe": {
+    "around": ["wrapper-context-info"]
+  }
+}
